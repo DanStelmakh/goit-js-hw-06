@@ -9,13 +9,7 @@ console.log("Number of categories:", categoriesEl.length);
 // console.log(`Category:`, categoriesEl[0].lastElementChild.children.length);
 //* Таким образом, еслит нужно обращаться к каждому элементу массива, нужно его перебрать любым методом.
 
-// /v1
-for (const elem of categoriesEl) {
+categoriesEl.forEach((elem) => {
   console.log(`Category:`, elem.firstElementChild.textContent);
   console.log(`Elements:`, elem.lastElementChild.children.length);
-}
-/// v2
-// categoriesEl.forEach((elem) => {
-//   console.log(`Category:`, elem.firstElementChild.textContent);
-//   console.log(`Elements:`, elem.lastElementChild.children.length);
-// });
+});
